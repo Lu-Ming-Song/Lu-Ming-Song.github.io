@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阿明的博客</title>
+  
+  <subtitle>Try a little harder to be a little better</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://songluming.com/"/>
+  <updated>2018-09-19T13:37:23.816Z</updated>
+  <id>http://songluming.com/</id>
+  
+  <author>
+    <name>青花猪的忧伤</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微笑面对</title>
+    <link href="http://songluming.com/18842/"/>
+    <id>http://songluming.com/18842/</id>
+    <published>2018-09-19T07:08:20.055Z</published>
+    <updated>2018-09-19T13:37:23.816Z</updated>
+    
+    <content type="html"><![CDATA[<p>生活中难免遇到许多我们无法预测的事<br>有的人选择逃避<br>有的人选择面对<br>二种选择都充满苦涩<br>请把苦涩与泪水留给夜里的自己<br>他催促我们成长</p><hr><h2 id="第一篇博客不谈学业"><a href="#第一篇博客不谈学业" class="headerlink" title="第一篇博客不谈学业"></a>第一篇博客不谈学业</h2><p>date: 2018-09-19 21:32:20</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;生活中难免遇到许多我们无法预测的事&lt;br&gt;有的人选择逃避&lt;br&gt;有的人选择面对&lt;br&gt;二种选择都充满苦涩&lt;br&gt;请把苦涩与泪水留给夜里的自己&lt;br&gt;他催促我们成长&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;第一篇博客不谈学业&quot;&gt;&lt;a href=&quot;#第一篇博客不谈学业&quot; class=
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
