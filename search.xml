@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[将域名与github绑定]]></title>
+    <url>%2F55776%2F</url>
+    <content type="text"><![CDATA[一：向你的 Github Pages 仓库添加一个CNAME(一定要大写)文件其中只能包含一个顶级域名，像这样：http://songluming.com 如果你是用 hexo 框架搭建博客并部署到 Github Pages 上，每次 hexo g hexo d 后会把把你的博客所在目录下 public 文件夹里的东西都推到 Github Pages 仓库上，这样将把CNAME文件覆盖掉，所以建议将CNAME文件添加到source文件夹里，这样每次pull就不用担心CNAME文件被覆盖。二：向你的 DNS 配置中添加 3 条记录 @ A 192.30.252.153@ A 192.30.252.154www CNAME username.github.io. 用你自己的 Github 用户名替换 usernamedate: 2018-09-20 22:27:42]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[微笑面对]]></title>
     <url>%2F18842%2F</url>
     <content type="text"><![CDATA[生活中难免遇到许多我们无法预测的事有的人选择逃避有的人选择面对二种选择都充满苦涩请把苦涩与泪水留给夜里的自己他催促我们成长 第一篇博客不谈学业date: 2018-09-19 21:32:20]]></content>
