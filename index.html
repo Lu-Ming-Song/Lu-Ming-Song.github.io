@@ -333,6 +333,161 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://songluming.com/7210/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="青花猪的忧伤">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿明的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/7210/" itemprop="url">python遍历文件夹的.xls文件并合并</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T21:26:04+08:00">
+                2018-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  199
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这是小编做的一款处理数据集方法，仅供参考<br>话不多说，直接上源码：<br>import os<br>import pandas as pd<br>df = pd.DataFrame(columns=[‘流水号’,’事件名称’,’本方户名’,’对方户名’,’流水时间’,’操作员’,’交易额’,’流水标志’,’扇区号’])<br>l = []<br>def search(path):<br>    parents = os.listdir(path)  # 返回指定路径下所有文件和文件夹的名字，并存放于一个列表中<br>    sum = 0<br>    for parent in parents:<br>        child = os.path.join(path,parent) # 将多个路径组合后返回<br>        if os.path.isdir(child):<br>            search(child)         # 遍历文件名<br>        elif os.path.isfile(child):<br>            if os.path.splitext(child)[1] == ‘.xls’:<br>                d = pd.read_excel(child)<br>                l.append(d)<br>search(r’C:\Users\aming\Desktop\大学生行为分析\后勤数据’)<br>df = pd.concat(l)<br>df.to_excel(‘result.xls’,index=False) # 保存到result文件里</p>
+<hr>
+<p>date: 2018-09-25 21:26:04</p>
+<h2 id="tags-python"><a href="#tags-python" class="headerlink" title="tags: python"></a>tags: python</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+<div>
+  
+</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://songluming.com/55776/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -681,7 +836,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

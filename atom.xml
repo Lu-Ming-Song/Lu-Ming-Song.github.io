@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://songluming.com/"/>
-  <updated>2018-09-21T11:39:09.193Z</updated>
+  <updated>2018-09-25T13:28:18.515Z</updated>
   <id>http://songluming.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python遍历文件夹的.xls文件并合并</title>
+    <link href="http://songluming.com/7210/"/>
+    <id>http://songluming.com/7210/</id>
+    <published>2018-09-25T13:26:04.271Z</published>
+    <updated>2018-09-25T13:28:18.515Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是小编做的一款处理数据集方法，仅供参考<br>话不多说，直接上源码：<br>import os<br>import pandas as pd<br>df = pd.DataFrame(columns=[‘流水号’,’事件名称’,’本方户名’,’对方户名’,’流水时间’,’操作员’,’交易额’,’流水标志’,’扇区号’])<br>l = []<br>def search(path):<br>    parents = os.listdir(path)  # 返回指定路径下所有文件和文件夹的名字，并存放于一个列表中<br>    sum = 0<br>    for parent in parents:<br>        child = os.path.join(path,parent) # 将多个路径组合后返回<br>        if os.path.isdir(child):<br>            search(child)         # 遍历文件名<br>        elif os.path.isfile(child):<br>            if os.path.splitext(child)[1] == ‘.xls’:<br>                d = pd.read_excel(child)<br>                l.append(d)<br>search(r’C:\Users\aming\Desktop\大学生行为分析\后勤数据’)<br>df = pd.concat(l)<br>df.to_excel(‘result.xls’,index=False) # 保存到result文件里</p><hr><p>date: 2018-09-25 21:26:04</p><h2 id="tags-python"><a href="#tags-python" class="headerlink" title="tags: python"></a>tags: python</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是小编做的一款处理数据集方法，仅供参考&lt;br&gt;话不多说，直接上源码：&lt;br&gt;import os&lt;br&gt;import pandas as pd&lt;br&gt;df = pd.DataFrame(columns=[‘流水号’,’事件名称’,’本方户名’,’对方户名’,’流水时间’,’
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>将域名与github绑定</title>

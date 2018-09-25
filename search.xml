@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python遍历文件夹的.xls文件并合并]]></title>
+    <url>%2F7210%2F</url>
+    <content type="text"><![CDATA[这是小编做的一款处理数据集方法，仅供参考话不多说，直接上源码：import osimport pandas as pddf = pd.DataFrame(columns=[‘流水号’,’事件名称’,’本方户名’,’对方户名’,’流水时间’,’操作员’,’交易额’,’流水标志’,’扇区号’])l = []def search(path): parents = os.listdir(path) # 返回指定路径下所有文件和文件夹的名字，并存放于一个列表中 sum = 0 for parent in parents: child = os.path.join(path,parent) # 将多个路径组合后返回 if os.path.isdir(child): search(child) # 遍历文件名 elif os.path.isfile(child): if os.path.splitext(child)[1] == ‘.xls’: d = pd.read_excel(child) l.append(d)search(r’C:\Users\aming\Desktop\大学生行为分析\后勤数据’)df = pd.concat(l)df.to_excel(‘result.xls’,index=False) # 保存到result文件里 date: 2018-09-25 21:26:04 tags: python]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[将域名与github绑定]]></title>
     <url>%2F55776%2F</url>
     <content type="text"><![CDATA[一：向你的 Github Pages 仓库添加一个CNAME(一定要大写)文件其中只能包含一个顶级域名，像这样：http://songluming.com 如果你是用 hexo 框架搭建博客并部署到 Github Pages 上，每次 hexo g hexo d 后会把把你的博客所在目录下 public 文件夹里的东西都推到 Github Pages 仓库上，这样将把CNAME文件覆盖掉，所以建议将CNAME文件添加到source文件夹里，这样每次pull就不用担心CNAME文件被覆盖。二：向你的 DNS 配置中添加 3 条记录 @ A 192.30.252.153@ A 192.30.252.154www CNAME username.github.io. 用你自己的 Github 用户名替换 username date: 2018-09-20 22:27:42categories: “Github之路”]]></content>
