@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://songluming.com/"/>
-  <updated>2018-09-25T14:48:33.019Z</updated>
+  <updated>2018-10-17T11:35:34.643Z</updated>
   <id>http://songluming.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>giehub绑定新的远程仓库</title>
+    <link href="http://songluming.com/16129/"/>
+    <id>http://songluming.com/16129/</id>
+    <published>2018-10-17T11:18:44.746Z</published>
+    <updated>2018-10-17T11:35:34.643Z</updated>
+    
+    <content type="html"><![CDATA[<p>（一个本地对多个远程仓库）：<br>在你需要上传的当前文件夹中打开Bash<br>1.git init<br>2.git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:Lu-Ming-Song/C.git<br>3.git add .<br>4.git commit -m “ 命名 “<br>5.git push -u origin master（如果报错：error: failed to push some refs to <a href="mailto:&#39;git@github.com" target="_blank" rel="noopener">&#39;git@github.com</a>:Lu-Ming-Song/C.git’）<br>（原因：出现错误的主要原因是github中的README.md文件不在本地代码目录中）<br>请输入：git pull –rebase origin master（下载README.md文件）<br>6.git push -u origin master</p><hr><p>date: 2018-10-17 19:18:44</p><h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;（一个本地对多个远程仓库）：&lt;br&gt;在你需要上传的当前文件夹中打开Bash&lt;br&gt;1.git init&lt;br&gt;2.git remote add origin &lt;a href=&quot;mailto:git@github.com&quot; target=&quot;_blank&quot; rel=&quot;noope
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>PIL添加一个像素序列到图像</title>
