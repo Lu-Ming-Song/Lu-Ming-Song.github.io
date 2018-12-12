@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[第五篇]]></title>
+    <url>%2F31206%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[giehub绑定新的远程仓库]]></title>
     <url>%2F16129%2F</url>
     <content type="text"><![CDATA[（一个本地对多个远程仓库）：在你需要上传的当前文件夹中打开Bash1.git init2.git remote add origin git@github.com:Lu-Ming-Song/C.git3.git add .4.git commit -m “ 命名 “5.git push -u origin master（如果报错：error: failed to push some refs to &#39;git@github.com:Lu-Ming-Song/C.git’）（原因：出现错误的主要原因是github中的README.md文件不在本地代码目录中）请输入：git pull –rebase origin master（下载README.md文件）6.git push -u origin master date: 2018-10-17 19:18:44 tags:]]></content>
