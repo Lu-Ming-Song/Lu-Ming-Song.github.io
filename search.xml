@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ERROR 1045(28000):Access denied for user '0DBC' @' localhost'(using password:NO)]]></title>
+    <url>%2F18858%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[启动问题]]></title>
     <url>%2F31206%2F</url>
     <content type="text"><![CDATA[在安装mysql的文件目录中找到配置文件my.ini,然后打开/images/1.png 打开后，搜索mysqld关键字,找到后，在mysqld下面添加skip-grant-tables，保存退出 开始按钮+R，打开运行对话框，输入”services.msc”，打开服务窗口 重启MySQL服务 然后运行cmd，输入:mysql -u root -p ,出现password：直接回车即可。 进入mysql数据库：mysql&gt; use mysql;Database changed 给root用户设置新密码：mysql&gt; update user set password=password(“123456”) where user=”root”; 刷新数据库mysql&gt; flush privileges;提示：Query OK, 0 rows affected (0.01 sec) 退出mysql：mysql&gt; exit提示：Bye 最后重新修改my.ini这个文件,把刚才加入的”skip-grant-tables”这行删除,保存退出再重启mysql服务就可以了。 date: 2018-12-12 18:06:16 tags:]]></content>

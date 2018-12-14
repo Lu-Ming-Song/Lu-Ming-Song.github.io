@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://songluming.com/"/>
-  <updated>2018-12-14T05:48:20.144Z</updated>
+  <updated>2018-12-14T08:57:38.207Z</updated>
   <id>http://songluming.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ERROR 1045(28000):Access denied for user &#39;0DBC&#39; @&#39; localhost&#39;(using password:NO)</title>
+    <link href="http://songluming.com/18858/"/>
+    <id>http://songluming.com/18858/</id>
+    <published>2018-12-14T08:57:38.000Z</published>
+    <updated>2018-12-14T08:57:38.207Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>启动问题</title>
